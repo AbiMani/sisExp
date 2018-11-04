@@ -1,0 +1,115 @@
+<?php 
+ ?>
+ <?php $this->assets->outputCss() ?>
+ <?php $this->assets->outputJs() ?>
+    <div class="container">
+            <!-- <div style="clear: both; padding-bottom:15px;"></div> -->
+            <div class="hero-unit">
+                <h1>Bienvenido a Sistema de Expediente Clinico</h1>
+                <p>Un Sistema creado en PHALCON </p>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    
+                    <h3> <img src="<?php echo $this->url->get("img/expediente.png") ?>" ><span 
+                        aria-hidden="true"></span> Registrar Paciente</h3>
+                    <p>Realiza la agregacion de un paciente al expediente de la clinica</p>
+                </div>
+                <div class="col-xs-6">
+                    <h3><img src="<?php echo $this->url->get("img/folder.png") ?>"> <span aria-hidden="true"></span> Buscar en el expediente</h3>
+                    <p>Permite la busqueda de un paciente en los expedientes</p>
+                </div>
+                <div class="col-xs-6">
+                    <h3><img src="<?php echo $this->url->get("img/clipboard(2).png") ?>"><span aria-hidden="true"></span> Almacenar una consulta</h3>
+                    <p>Realiza el ingreso de una consulta de un paciente</p>
+                </div>
+                <div class="col-xs-6">
+                    <h3><img src="<?php echo $this->url->get("img/examen.png") ?>"><span aria-hidden="true"></span> Añadir Examen</h3>
+                    <p>Disponiblidad de agregar un resultado de examen a un expediente</p>
+                </div>
+                <div class="col-xs-6">
+                    <h3><img src="<?php echo $this->url->get("img/doctor(1).png") ?>"><span aria-hidden="true"></span> Empleados</h3>
+                    <p>Permite el control de los emlpleados de la clinica</p>
+                </div>
+            </div>                       
+        </div>
+        
+        
+        <!-- <div class="push"></div> -->
+        <footer class="footer">
+            <hr>
+            <p style="padding-left: 25px;">Universidad de El Salvador, Tecnologías Orientadas a Objeto, Ciclo II - 2018, Todos los derechos Reservados &COPY; </p>
+        </footer>
+        <!-- Ampliar el Alto del documento al 90% para el footer-->
+        <style type="text/css">
+        html, body {
+        height: 100%;
+        margin: 0px;
+    }
+    .container {
+        min-height: 90%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto -80px;
+    }
+    
+    footer {
+        height: 80px;
+        width: 100%;
+    }
+    
+    .push {
+        height: 80px;
+    }
+    
+        </style>
+        
+    
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.9);">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color:  rgba(255, 255, 255, 0.9);">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title"><center>Login Up</center></h4>
+                </div>
+                <div class="modal-body">
+                    <img id="profile-img" class=" profile-img-card img-rounded" src="<?php echo $this->url->get("img/hospital1.png") ?>" />
+                    <form class="form-horizontal" id="formPlanilla" action="users/ogin" method="GET">
+
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input type="text" name="username" id="inputEmail" class="form-control" placeholder="Ingrese email" required>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input type="password" name="pass" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+
+                            </div>
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button class="btn btn-lg btn-success btn-block " type="submit" name="login">Iniciar Sesion</button>
+
+                        </div>
+                        
+
+                    </form>
+                    <div class="modal-footer">
+                            <button class="btn btn-lg btn-warning" href="<?php echo $this->url->get("users/create") ?>" name="log">Registrarse</button>
+                    </div>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script>
+        $(document).ready(function () {
+            $('#myModal').modal('show')
+        });
+    </script>

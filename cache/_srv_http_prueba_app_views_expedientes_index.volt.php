@@ -1,0 +1,49 @@
+	<nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+           
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="index.php">Expediente Clinico</a>
+
+            </div>
+
+
+            <div class="collapse navbar-collapse" role="navigation" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Registro paciente<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="o">Crear Paciente</a></li>
+                            <li><a href="">Buscar Paciente</a></li>
+
+                            <li class="dropdown-submenu">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Control de consultas</a>
+                              <ul class="dropdown-menu">
+                                 <li><a href="">Crear Consulta</a></li>
+                                      <li><a href="">Buscar Consulta</a></li>
+                                      <li class="divider"></li>
+                                      <li><a href="">Añadir examen clinico</a></li>
+                              </ul>
+                  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Registro de Pacientes<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Planilla</a></li>
+                            <li><a href="">Empleados</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">Salir</a></li>
+                </ul>
+            </div> <!--/.navbar-collapse -->
+        </div> 
+    </nav>
